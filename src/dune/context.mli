@@ -62,7 +62,7 @@ type t =
   ; build_dir : Path.Build.t
         (** env node that this context was initialized with *)
   ; env_nodes : Env_nodes.t  (** [PATH] *)
-  ; path : Path.t list  (** [OCAML_TOPLEVEL_PATH] *)
+  ; path : Path.t list  (** [OCAMLTOP_INCLUDE_PATH] *)
   ; toplevel_path : Path.t option
         (** Ocaml bin directory with all ocaml tools *)
   ; ocaml_bin : Path.t

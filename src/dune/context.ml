@@ -489,7 +489,7 @@ let create ~(kind : Kind.t) ~path ~env ~env_nodes ~name ~merlin ~targets
       ; path
       ; toplevel_path =
           Option.map
-            (Env.get env "OCAML_TOPLEVEL_PATH")
+            (Env.get env "OCAMLTOP_INCLUDE_PATH")
             ~f:Path.of_filename_relative_to_initial_cwd
       ; ocaml_bin = dir
       ; ocaml =
